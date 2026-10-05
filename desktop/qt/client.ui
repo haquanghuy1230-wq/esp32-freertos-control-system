@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>-70</x>
+      <y>-20</y>
+      <width>641</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/myimag/B_Tagline - HCM-UTE - 1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>611</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>RTOS - CONTROL SYSTEM</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="led2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>160</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>LED 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="led2_on">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="led2_off">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="status">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>160</y>
+      <width>321</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>Status</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="status_led1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LED 1: OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="status_led2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LED 2: OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="light_sensor">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>LIGHT SENSOR: 000.0 lux</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="name">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>360</y>
+      <width>301</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>Thành viên</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Võ Trung Nguyên</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Hà Quang Huy</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Lê Đoàn Thái Khương</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Phạm Ngọc Duy</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="led1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>LED 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="led1_on">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="led1_off">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="date_and_time">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>171</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>DATE AND TIME</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="time">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>00:00:00</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="date">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>00/00/0000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="send_data">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>381</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    border: 2px solid #3498DB;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}</string>
+    </property>
+    <property name="title">
+     <string>Send data</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLineEdit" name="textbox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OK</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>send_data</zorder>
+   <zorder>Logo</zorder>
+   <zorder>title</zorder>
+   <zorder>led2</zorder>
+   <zorder>status</zorder>
+   <zorder>name</zorder>
+   <zorder>led1</zorder>
+   <zorder>date_and_time</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="imag.qrc"/>
+ </resources>
+ <connections/>
+</ui>

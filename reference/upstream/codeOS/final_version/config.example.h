@@ -1,0 +1,8 @@
+#pragma once
+// Copy to config.local.h and supply your own project credentials.
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+#define USER_EMAIL "YOUR_FIREBASE_USER_EMAIL"
+#define USER_PASSWORD "YOUR_FIREBASE_USER_PASSWORD"
+#define API_KEY "YOUR_FIREBASE_WEB_API_KEY"
+#define FIREBASE_PROJECT_ID "YOUR_FIREBASE_PROJECT_ID"
