@@ -1,4 +1,4 @@
-// Recovered from section 4.2.2 of RTOS_report.docx.
+// Non-OS: LED control, BH1750 sensing and OLED display using millis().
 #include <Arduino.h>
 #include <Wire.h>
 #include <BH1750.h>
